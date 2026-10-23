@@ -205,8 +205,7 @@ This dashboard provides an overview of trip activity and revenue performance.
 
 **Screenshot:** `Time-Based Demand analysis.png`
 
-![Time-Based Demand Analysis Dashboard](https://raw.githubusercontent.com/bs391095/uber-trips-analytics/main/PowerBI%20deshboards/Time-Based%20Demand%20analysis.png)
-
+![Time-Based Demand Analysis Dashboard][Time-Based Demand Analysis](./PowerBI%20deshboards/Time-Based%20Demand%20analysis.png)
 This dashboard examines how trip demand varies across different times of the day and days of the week.
 
 **Key areas covered:**
