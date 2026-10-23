@@ -1,238 +1,245 @@
-# 🚖 Uber Trips Analytics | End-to-End Data Analytics Project
+# Uber Trips Analytics — End-to-End Data Analytics Project
 
-**Python Automation | SQL | Power BI | Business Intelligence**
+**Python | SQL | Power BI | Data Automation | Business Intelligence**
 
-An end-to-end data analytics project built using NYC Green Taxi trip data from 2017–2020. This project combines Python-based data preparation and automation, SQL business analysis, and Power BI dashboards to transform raw trip data into meaningful insights about revenue, demand, geography, payment behavior, passengers, and trip distances.
+An end-to-end analytics project focused on exploring NYC Green Taxi trip data from 2017 to 2020. This project combines Python-based data preparation and automation, SQL business analysis, and Power BI dashboards to uncover patterns in trip demand, revenue, routes, payments, passengers, and travel distances.
 
----
-
-## 📑 Table of Contents
-
-1. [Project Overview](#-project-overview)
-2. [Business Objectives](#-business-objectives)
-3. [Technology Stack](#-technology-stack)
-4. [Project Architecture and Workflow](#-project-architecture-and-workflow)
-5. [Python Automation and Data Pipeline](#-python-automation-and-data-pipeline)
-6. [SQL Business Analysis](#-sql-business-analysis)
-7. [Power BI Dashboard Gallery](#-power-bi-dashboard-gallery)
-8. [Key Insights](#-key-insights)
-9. [Business Problems This Project Can Help Solve](#-business-problems-this-project-can-help-solve)
-10. [How to Explore This Project](#-how-to-explore-this-project)
-11. [How to Run the Project](#-how-to-run-the-project)
-12. [Data Quality and Limitations](#-data-quality-and-limitations)
-13. [Future Improvements](#-future-improvements)
-14. [Conclusion](#-conclusion)
+The objective is to build a repeatable data workflow that transforms raw trip records into meaningful business insights and makes reporting easier to maintain.
 
 ---
 
-## 📌 Project Overview
+## Table of Contents
 
-The **Uber Trips Analytics** project demonstrates an end-to-end data analytics workflow, from raw data preparation to interactive business reporting.
+1. [Project Overview](#project-overview)
+2. [Business Objectives](#business-objectives)
+3. [Technology Stack](#technology-stack)
+4. [Project Workflow and Architecture](#project-workflow-and-architecture)
+5. [Python Automation and SQL Integration](#python-automation-and-sql-integration)
+6. [SQL Business Analysis](#sql-business-analysis)
+7. [Power BI Dashboard Gallery](#power-bi-dashboard-gallery)
+8. [Key Insights](#key-insights)
+9. [Business Problems and Applications](#business-problems-and-applications)
+10. [How to Explore This Project](#how-to-explore-this-project)
+11. [How to Run the Project](#how-to-run-the-project)
+12. [Data Quality and Limitations](#data-quality-and-limitations)
+13. [Future Improvements](#future-improvements)
+14. [Conclusion](#conclusion)
 
-The project uses NYC Green Taxi trip records covering 2017–2020 to investigate travel demand, revenue trends, popular routes, borough-level activity, payment methods, tipping behavior, passenger counts, and trip distances.
+---
 
-Python scripts help prepare the data and automate its import into SQL. SQL queries answer business questions, while Power BI connects to the SQL data source to present the results through interactive dashboards.
+## Project Overview
+
+The Uber Trips Analytics project demonstrates how data analytics tools can work together to create a structured reporting solution.
+
+The project uses NYC Green Taxi trip records from 2017–2020 to analyze trip performance, revenue trends, time-based demand, geographic distribution, payment methods, tipping patterns, passenger counts, and trip distances.
+
+Python is used to prepare the data and automate its import into SQL. SQL queries answer business questions, and Power BI connects to the SQL database to present the results through interactive reports.
 
 ### Project Highlights
 
-- Python-based data cleaning and preparation.
-- Script-based data import into SQL using a configured file path.
-- SQL queries addressing 10 business questions.
-- A SQL-to-Power BI connection for reporting.
-- Five Power BI dashboard screenshot pages.
-- An analytics workflow designed to support repeatable data updates and reporting.
+- Data preparation and cleaning using Python and Jupyter Notebook.
+- A Python script that reads data from a configured file path and imports it into SQL.
+- Ten SQL business queries covering key transportation and revenue metrics.
+- A SQL database connection to Power BI.
+- Five Power BI dashboard pages covering different analytical areas.
+- A reporting workflow designed to support repeatable data loading and report refreshes.
 
-**Project category:** Data Analytics, Business Intelligence, and Reporting Automation  
+**Project category:** Data Analytics and Business Intelligence  
 **Dataset period:** 2017–2020  
 **Primary tools:** Python, Jupyter Notebook, SQL, Power BI, GitHub
 
 ---
 
-## 🎯 Business Objectives
+## Business Objectives
 
-The main objective is to turn raw taxi trip records into useful information for understanding transportation operations and business performance.
+The main objective is to convert raw taxi trip records into useful information for understanding transportation activity and business performance.
 
-This project focuses on:
+The project aims to:
 
-- Tracking trip volume and year-over-year trends.
-- Understanding monthly revenue and average fare patterns.
-- Identifying high-demand days and hours.
-- Analyzing pickup and drop-off zones across boroughs.
-- Discovering frequently used routes.
-- Evaluating payment methods and tipping patterns.
-- Studying passenger counts and trip distances.
-- Reducing repetitive data preparation and import tasks through Python automation.
-- Making business reporting easier to review and update through Power BI.
+- Analyze yearly trip trends and changes over time.
+- Track monthly revenue and average fare metrics.
+- Identify peak demand days and hours.
+- Understand trip distribution across boroughs and taxi zones.
+- Discover frequently used pickup and drop-off routes.
+- Compare payment methods and tipping patterns.
+- Explore passenger counts and trip-distance variations.
+- Reduce repetitive manual data-import work through Python automation.
+- Make data-driven reporting easier through SQL-connected Power BI dashboards.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
-| Technology | Purpose |
+| Technology | Role in the Project |
 |---|---|
-| Python | Data preparation, cleaning, and automation |
-| Jupyter Notebook | Exploratory analysis and data preparation |
+| Python | Data preparation, processing, and automation |
+| Jupyter Notebook | Data exploration and preprocessing |
 | SQL | Data storage, querying, aggregation, and business analysis |
-| Power BI | Interactive dashboards and visual reporting |
-| GitHub | Version control, documentation, and project sharing |
+| Power BI | Dashboard development and reporting |
+| GitHub | Version control, project documentation, and portfolio sharing |
 
 ---
 
-## 🔄 Project Architecture and Workflow
+## Project Workflow and Architecture
 
-The project follows a structured pipeline from raw data to business insights.
+The project follows an end-to-end workflow, from source data preparation to business reporting.
 
 ```text
 NYC Green Taxi Dataset (2017–2020)
                  |
                  v
-       Python / Jupyter Notebook
-       Data Cleaning and Preparation
+        Python / Jupyter Notebook
+        Data Cleaning and Preparation
                  |
                  v
-        Python Automation Script
-        Reads Data from File Path
+          Python Automation Script
+          Reads Data from File Path
                  |
                  v
-             SQL Database
-      Data Import and SQL Analysis
+              SQL Database
+          Data Import and Analysis
                  |
                  v
-        SQL Connection to Power BI
+          Power BI SQL Connection
                  |
                  v
-       Power BI Dataset / Model
+        Power BI Data Model and Report
                  |
                  v
-       Refresh Power BI Report
+          Refresh the Report
                  |
                  v
-       Interactive Business Dashboards
+       Interactive Dashboard Visuals
                  |
                  v
-        Insights and Decision Support
+          Business Insights
 ```
 
 ### Workflow Explanation
 
-1. **Data preparation:** Python and Jupyter Notebook are used to inspect, clean, and prepare the source data.
-2. **Automated import:** A Python script uses a configured file path to read the prepared data and import it into the SQL database.
-3. **SQL analysis:** SQL queries calculate business metrics and answer analytical questions.
-4. **Power BI connection:** Power BI connects to the SQL data source and uses the data for its report model and visuals.
-5. **Report refresh:** Refreshing the Power BI dataset or report retrieves updated SQL data when the connection and refresh configuration are set up correctly.
-6. **Business reporting:** The dashboard pages present the results in a visual format for analysis and decision-making.
+**1. Data preparation:** Python and Jupyter Notebook are used to inspect and prepare the source data for analysis.
+
+**2. Automated data import:** A Python script reads the prepared file from a configured path and loads the data into the target SQL database.
+
+**3. SQL analysis:** SQL queries calculate metrics and answer the ten business questions defined for the project.
+
+**4. Power BI integration:** Power BI connects to the SQL data source and uses the data to build report visuals.
+
+**5. Report refresh:** Refreshing the connected Power BI dataset retrieves updated source data, provided the connection and refresh settings are configured correctly.
+
+**6. Business reporting:** The five dashboard pages present the results in a visual format that is easier to explore and interpret.
 
 ---
 
-## ⚙️ Python Automation and Data Pipeline
+## Python Automation and SQL Integration
 
-One of the important features of this project is the use of a **Python automation script for data import into SQL**.
+A key part of this project is the Python automation script developed to simplify the data-import process.
 
-Instead of manually importing the prepared file each time, the script is configured to read data from a specified file path and load it into the target SQL database.
+Instead of manually importing the prepared file every time, the script uses a configured file path to read the data and load it into SQL. This makes the import process more repeatable and reduces repetitive manual steps.
 
 ### Automation Process
 
 - Read the prepared dataset from the configured file path.
-- Perform the required data preparation or validation steps implemented in the script.
+- Apply the data preparation or validation steps implemented in the script.
 - Connect to the configured SQL database.
-- Import the data into the target SQL table or tables.
-- Make the SQL data available for downstream analysis in Power BI.
+- Load the data into the appropriate target table or tables.
+- Make the imported data available for SQL analysis and Power BI reporting.
 
-### SQL-to-Power BI Reporting
+### SQL-to-Power BI Connection
 
-Power BI is connected to the SQL database so the report can use the latest data available in its configured source.
+Power BI is connected to the SQL database so that reports can use data from the configured source.
 
-When the data pipeline is run again and new data is successfully loaded into SQL, refreshing the Power BI dataset can update the report visuals.
+When the Python script is run again and new data is successfully imported into SQL, refreshing the Power BI dataset can update the report visuals with the latest available data.
 
-**Important distinction:** Power BI refresh updates the report from its connected data source; it does not automatically execute a separate Python import script unless an additional orchestration or scheduling process has been configured. File paths, database credentials, permissions, refresh mode, and any required gateway must also be configured correctly.
+**Important:** Refreshing Power BI does not automatically run the separate Python import script. If the entire process must run automatically from data import to report refresh, scheduling or orchestration must also be configured. The exact setup depends on the database, Power BI connection mode, credentials, permissions, and any required gateway.
 
-This workflow reduces repetitive manual work and creates a foundation for repeatable reporting.
-
----
-
-## 🧮 SQL Business Analysis
-
-SQL is used to transform the prepared data into business-focused metrics and comparisons.
-
-The project investigates the following 10 questions:
-
-| # | Business Question | Analytical Purpose |
-|---|---|---|
-| 1 | What are the yearly trip trends and year-over-year changes? | Understand changes in trip activity over time |
-| 2 | How do monthly revenue and average revenue per trip change? | Monitor revenue performance and fare trends |
-| 3 | Which days and hours have the highest average trip volume? | Identify periods of high travel demand |
-| 4 | What percentage of trips originate in each borough? | Understand geographic distribution |
-| 5 | What are the top 10 pickup and drop-off zone routes? | Identify frequently used routes |
-| 6 | What is the average passenger count by borough? | Compare passenger patterns by location |
-| 7 | How does average trip distance vary between pickup and drop-off boroughs? | Understand geographic travel distances |
-| 8 | What are the payment-type shares and average fares? | Analyze payment behavior and fare differences |
-| 9 | Which pickup and drop-off routes have the highest average tips? | Explore tipping patterns by route |
-| 10 | Which borough-to-borough combinations generate the most revenue? | Compare revenue contribution across borough pairs |
-
-The SQL outputs provide the analytical foundation for the Power BI reporting layer.
+This approach provides a foundation for a more automated and maintainable reporting pipeline.
 
 ---
 
-## 📊 Power BI Dashboard Gallery
+## SQL Business Analysis
 
-The project includes five dashboard pages covering complementary aspects of taxi operations. The screenshots below are stored in the `PowerBI deshboards` folder of this repository.
+SQL is used to analyze the prepared data and answer ten business-focused questions.
+
+| No. | Business Question | Purpose |
+|---:|---|---|
+| 1 | What are the yearly trip trends and year-over-year changes? | Understand trip growth and decline |
+| 2 | How do monthly revenue and average revenue per trip change? | Evaluate revenue performance |
+| 3 | Which days and hours have the highest average trip volume? | Identify potential peak-demand periods |
+| 4 | What percentage of trips originate in each borough? | Measure geographic distribution |
+| 5 | What are the top 10 pickup and drop-off zone routes? | Discover frequently used routes |
+| 6 | What is the average passenger count by borough? | Compare passenger patterns |
+| 7 | How does average trip distance vary between pickup and drop-off boroughs? | Examine geographic travel distances |
+| 8 | What are the payment-type shares and average fares? | Analyze payment behavior |
+| 9 | Which pickup and drop-off routes have the highest average tips? | Explore tipping patterns |
+| 10 | Which borough-to-borough combinations generate the most revenue? | Compare revenue across borough pairs |
+
+These queries provide the analytical foundation for the Power BI dashboards and help translate raw records into business-focused metrics.
+
+---
+
+## Power BI Dashboard Gallery
+
+The project includes five dashboard pages. Each page focuses on a different aspect of trip activity and business performance.
+
+The screenshots are stored in the repository folder named `PowerBI deshboards`.
 
 ### 1. Trip and Revenue Insights
 
-**File:** `TRip and revenue insight.png`
+**Screenshot:** `TRip and revenue insight.png`
 
-![Trip and Revenue Insights Dashboard](PowerBI%20deshboards/TRip%20and%20revenue%20insight.png)
+![Trip and Revenue Insights Dashboard](https://raw.githubusercontent.com/bs391095/uber-trips-analytics/main/PowerBI%20deshboards/TRip%20and%20revenue%20insight.png)
 
-This dashboard focuses on overall trip performance and revenue.
+This dashboard provides an overview of trip activity and revenue performance.
 
 **Key areas covered:**
-- Total trip volume.
-- Total revenue and average fare per trip.
-- Yearly trip trends and growth.
+- Total trips and revenue.
+- Average fare per trip.
+- Yearly trip trends.
 - Monthly revenue patterns.
 - Fare distribution.
 
-**Business use:** Helps stakeholders monitor overall performance and investigate changes in trip volume and revenue.
+**Business value:** Helps users monitor overall performance and investigate changes in trip volume and revenue.
 
 ### 2. Time-Based Demand Analysis
 
-**File:** `Time-Based Demand analysis.png`
+**Screenshot:** `Time-Based Demand analysis.png`
 
-![Time-Based Demand Analysis Dashboard](PowerBI%20deshboards/Time-Based%20Demand%20analysis.png)
+![Time-Based Demand Analysis Dashboard](https://raw.githubusercontent.com/bs391095/uber-trips-analytics/main/PowerBI%20deshboards/Time-Based%20Demand%20analysis.png)
 
-This dashboard examines how demand varies by time.
+This dashboard examines how trip demand varies across different times of the day and days of the week.
 
 **Key areas covered:**
 - Trip volume by hour.
-- Trip volume by day of the week.
-- Busy periods and recurring demand patterns.
-- Average distance and fare-related metrics.
+- Trip volume by day.
+- Potential high-demand periods.
+- Average trip distance and fare-related metrics.
 
-**Business use:** Helps identify potential high-demand periods for operational planning and resource allocation.
+**Business value:** Helps identify periods worth investigating for operational planning and resource allocation.
 
 ### 3. Geographic Analysis
 
-**File:** `Geographic analysis.png`
+**Screenshot:** `Geographic analysis.png`
 
-![Geographic Analysis Dashboard](PowerBI%20deshboards/Geographic%20analysis.png)
+![Geographic Analysis Dashboard](https://raw.githubusercontent.com/bs391095/uber-trips-analytics/main/PowerBI%20deshboards/Geographic%20analysis.png)
 
-This dashboard explores trip activity across boroughs and taxi zones.
+This dashboard focuses on trip distribution across boroughs and taxi zones.
 
 **Key areas covered:**
 - Trips by borough.
 - Pickup and drop-off zone analysis.
-- Geographic trip distribution.
-- Average trip distance by pickup and drop-off location.
+- Geographic trip patterns.
+- Average trip distance by location.
 
-**Business use:** Helps identify high-activity locations and investigate geographic differences in travel demand.
+**Business value:** Helps identify areas with substantial recorded trip activity and compare geographic travel patterns.
 
 ### 4. Payment and Tips Insights
 
-**File:** `Payment Tips insight.png`
+**Screenshot:** `Payment Tips insight.png`
 
-![Payment and Tips Insights Dashboard](PowerBI%20deshboards/Payment%20Tips%20insight.png)
+![Payment and Tips Insights Dashboard](https://raw.githubusercontent.com/bs391095/uber-trips-analytics/main/PowerBI%20deshboards/Payment%20Tips%20insight.png)
 
-This dashboard focuses on payment methods and tipping behavior.
+This dashboard explores payment methods and tipping behavior.
 
 **Key areas covered:**
 - Payment-type distribution.
@@ -240,219 +247,224 @@ This dashboard focuses on payment methods and tipping behavior.
 - Average tip metrics.
 - Tip patterns across boroughs.
 
-**Business use:** Helps compare payment behavior and understand how tipping patterns vary across locations.
+**Business value:** Helps describe payment preferences in the recorded data and compare tipping patterns across locations.
 
 ### 5. Passenger and Distance Insights
 
-**File:** `Passenger & Distance insight.png`
+**Screenshot:** `Passenger & Distance insight.png`
 
-![Passenger and Distance Insights Dashboard](PowerBI%20deshboards/Passenger%20%26%20Distance%20insight.png)
+![Passenger and Distance Insights Dashboard](https://raw.githubusercontent.com/bs391095/uber-trips-analytics/main/PowerBI%20deshboards/Passenger%20%26%20Distance%20insight.png)
 
-This dashboard investigates passenger counts and trip distances.
+This dashboard examines passenger counts and trip distances.
 
 **Key areas covered:**
-- Trip volume by passenger count.
+- Trips by passenger count.
 - Average passenger count per trip.
 - Average trip distance.
 - Distance patterns across boroughs.
 
-**Business use:** Helps examine passenger travel patterns and differences in trip distances across locations.
+**Business value:** Helps investigate passenger travel patterns and understand differences in recorded trip distances.
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
-The SQL analysis and dashboard results highlight several patterns worth investigating.
+The SQL results and dashboard outputs highlight several patterns that are useful for further investigation.
 
 ### 1. Yearly Trip Trends
 
-The yearly trip counts show substantial variation across the 2017–2020 period. The recorded totals rise from approximately 1.05 million trips in 2017 to 8.81 million in 2018, followed by around 6.05 million in 2019 and 1.74 million in 2020.
+The available SQL results report approximately 1.05 million trips in 2017, 8.81 million in 2018, 6.05 million in 2019, and 1.74 million in 2020.
 
-**Interpretation:** The dataset shows a strong decline in recorded trips after 2018. Because the dataset coverage and consistency may differ by year, these totals should be validated before attributing the changes to business or external factors.
+**Insight:** Recorded trip volume changes substantially across the period, including a decline after 2018. Differences in data coverage and consistency should be checked before drawing conclusions about the reasons behind these changes.
 
 ### 2. Geographic Distribution
 
-The borough-level analysis indicates that Manhattan accounts for approximately 33.40% of recorded trips, Brooklyn 30.96%, and Queens 28.93%. The Bronx contributes approximately 6.48%, with a small share classified as Unknown.
+The recorded borough analysis shows approximately 33.40% of trips associated with Manhattan, 30.96% with Brooklyn, and 28.93% with Queens. The Bronx represents approximately 6.48%, while a small share is categorized as Unknown.
 
-**Interpretation:** Manhattan, Brooklyn, and Queens represent the largest recorded trip shares in the analyzed results. This can guide further investigation of geographic demand and route activity.
+**Insight:** Manhattan, Brooklyn, and Queens account for the largest shares in the analyzed output. This provides a starting point for investigating geographic demand and route activity.
 
-### 3. Peak Demand Periods
+### 3. Peak-Demand Periods
 
-The time-based SQL results show several high-volume periods around late afternoon and early evening on Thursdays and Fridays, including Friday at 5 PM.
+The time-based SQL results identify several high-volume periods around late afternoon and early evening, particularly on Thursdays and Fridays.
 
-**Interpretation:** These periods are candidates for closer demand analysis and operational planning. Actual staffing or vehicle allocation decisions should also consider seasonality, location, and more recent data.
+**Insight:** These periods could be examined further when planning vehicle availability and operational resources. More recent data and seasonal comparisons would be needed before making operational decisions.
 
-### 4. Passenger Counts
+### 4. Passenger Patterns
 
-The calculated average passenger count is approximately 1.33 passengers per trip overall in the dashboard results. Borough-level averages in the SQL output range from approximately 1.24 to 1.40 passengers per trip.
+The Power BI dashboard reports an average passenger count of approximately 1.33 per trip, while the SQL output shows some variation across boroughs.
 
-**Interpretation:** The results suggest that single-passenger trips are an important part of the recorded activity, while passenger patterns vary modestly by borough.
+**Insight:** Passenger counts can help describe typical trip occupancy and differences in recorded travel patterns between areas.
 
-### 5. Trip Distance Patterns
+### 5. Distance Patterns
 
-The distance analysis identifies differences across borough pairs, with some routes involving Staten Island showing much higher average distances than many within-borough journeys.
+The SQL analysis identifies differences in average trip distance between borough pairs. Some journeys involving Staten Island have considerably higher average distances than many within-borough routes.
 
-**Interpretation:** Geographic distance patterns can help explain variations in trip duration and fare, but unusual values should be checked for data-entry errors or outliers.
+**Insight:** Geographic distance analysis can help explain route variation, but unusual values should be checked for outliers and data-quality issues.
 
-### 6. Payment and Tips
+### 6. Payment-Type Distribution
 
-The SQL results show payment types 1 and 2 as the largest recorded payment categories, with type 1 representing approximately 53.28% and type 2 approximately 40.68% of the analyzed records.
+The available SQL results show payment type 1 at approximately 53.28% and payment type 2 at approximately 40.68% of the analyzed records.
 
-**Interpretation:** Payment-type distribution can help describe customer payment behavior. The meaning of each payment code should be verified against the dataset's official definitions before assigning business labels.
+**Insight:** These categories account for most of the recorded payment distribution in the output. Official source definitions should be checked before assigning business labels to payment codes.
 
-### 7. Revenue Concentration
+### 7. Revenue by Borough Pair
 
-The borough-pair analysis shows substantial recorded revenue for within-borough trips, including Manhattan-to-Manhattan, Brooklyn-to-Brooklyn, and Queens-to-Queens journeys.
+The SQL output identifies substantial recorded revenue for within-borough journeys, including Manhattan-to-Manhattan, Brooklyn-to-Brooklyn, and Queens-to-Queens trips.
 
-**Interpretation:** Comparing trip counts alongside revenue helps distinguish high-volume routes from routes that generate higher revenue per trip.
+**Insight:** Comparing revenue alongside trip counts provides a better view of route performance than looking at trip volume alone.
 
-**Note:** These are preliminary findings from the available SQL and dashboard results. Metric definitions, dataset coverage, duplicates, missing values, and revenue calculations must be validated before the figures are used for formal business decisions.
+**Data note:** These figures are preliminary results from the project's available outputs. Validate the source data, metric definitions, date coverage, and revenue calculations before using them for formal business decisions.
 
 ---
 
-## 🏢 Business Problems This Project Can Help Solve
+## Business Problems and Applications
 
-The project provides analytical support for several common transportation and mobility business challenges.
+This project helps investigate common challenges faced by transportation businesses and analysts.
 
-| Business Problem | How the Project Helps |
+| Business Problem | How This Project Helps |
 |---|---|
-| Unclear trip performance | Yearly and monthly metrics make trip trends easier to monitor |
-| Difficulty identifying peak periods | Day-and-hour analysis highlights potential high-demand windows |
-| Limited visibility into geographic demand | Borough and zone analysis shows where recorded trips are concentrated |
-| Unclear route performance | Pickup and drop-off analysis helps compare frequently used routes |
-| Limited revenue visibility | Revenue and average-fare metrics support performance comparisons |
-| Lack of payment behavior insights | Payment distribution helps describe the mix of recorded payment methods |
-| Limited understanding of tipping patterns | Tip analysis compares recorded tips across routes and boroughs |
+| Limited visibility into trip performance | Yearly and monthly analysis highlights changes in trip activity |
+| Difficulty identifying busy periods | Day-and-hour analysis identifies potential high-demand windows |
+| Unclear geographic demand | Borough and zone analysis compares recorded trip distribution |
+| Limited route-level understanding | Pickup and drop-off analysis identifies frequently used routes |
+| Difficulty monitoring revenue | Revenue and average-fare metrics support performance comparisons |
+| Lack of payment insights | Payment-type analysis describes the distribution of recorded payment methods |
+| Limited visibility into tips | Tip analysis compares patterns across routes and boroughs |
 | Unclear passenger and distance patterns | Passenger and distance dashboards reveal differences across trips |
-| Repetitive manual data imports | A Python script automates the configured data-loading step |
-| Time-consuming report updates | SQL-connected Power BI reporting makes refreshed data easier to visualize |
+| Repetitive manual data imports | Python automation reduces repetitive import work |
+| Time-consuming reporting updates | SQL-connected Power BI reporting makes updated data easier to visualize |
 
 ### Potential Business Applications
 
-The analysis could support:
+The results could support:
 
-- Transportation demand planning.
+- Transportation demand analysis.
 - Revenue monitoring and performance reporting.
-- Geographic service analysis.
+- Geographic service planning.
 - Operational resource planning.
 - Route-level performance comparisons.
+- Payment and tipping behavior analysis.
 - Management reporting and business intelligence.
 
-These dashboards support analysis rather than automatically making operational decisions. Recommendations should be validated with reliable, representative, and appropriately current data.
+The project provides analytical support rather than automatic business decisions. Any operational changes should be based on validated metrics and suitable, up-to-date data.
 
 ---
 
-## 🗂️ How to Explore This Project
+## How to Explore This Project
 
-If you are reviewing this repository for learning, portfolio evaluation, or technical understanding, follow this order.
+Follow this order to understand the project from data preparation to final reporting.
 
-### Step 1 — Review the Python Scripts
+### Step 1: Explore the Python Scripts
 
 Open the `Uber_Python_Script` folder.
 
-Review how the source data is prepared and how the automation script reads a configured file path and loads the data into SQL.
+Review the Python files to understand how data is prepared and how the automation script reads data from a configured file path and imports it into SQL.
 
-### Step 2 — Explore the SQL Analysis
+### Step 2: Review the SQL Queries
 
 Open the `SQL_Uber` folder.
 
-Review the business queries, aggregation logic, calculated metrics, and outputs used to answer the 10 analytical questions.
+Explore the business queries, aggregation logic, calculations, and results used to answer the ten analytical questions.
 
-### Step 3 — View the Dashboard Screenshots
+### Step 3: View the Power BI Dashboard Screenshots
 
-Open the `PowerBI deshboards` folder or review the embedded dashboard gallery above.
+Open the `PowerBI deshboards` folder.
 
-Each screenshot represents a separate report page and highlights a different analytical area.
+Review the five dashboard images to see how the results are organized into trip and revenue, time-based demand, geographic, payment and tips, and passenger and distance analyses.
 
-### Step 4 — Review the Project Reports
+### Step 4: Explore the Presentation Reports
 
-Open the `Presentation Reports` folder to explore the available presentation materials and project documentation.
+Open the `Presentation Reports` folder.
 
-### Step 5 — Understand the End-to-End Workflow
+Review the available presentation materials and reports for additional project context and explanations of the analysis.
 
-Trace the process from Python data preparation to SQL import, SQL analysis, Power BI connectivity, and report refresh. This demonstrates how data preparation, querying, and visualization work together in a reporting pipeline.
+### Step 5: Follow the Complete Data Pipeline
+
+Connect the stages together: Python data preparation, automated SQL import, SQL analysis, Power BI connectivity, and report refresh.
+
+This sequence demonstrates how the project's tools work together to support a repeatable analytics workflow.
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
-The exact execution commands depend on the Python script, SQL database engine, connection settings, and installed dependencies included in the repository.
+The exact commands and configuration depend on the scripts and SQL database included in the repository.
 
 ### Prerequisites
 
 - Python and the packages required by the included scripts.
 - Jupyter Notebook, if using the notebook workflow.
-- A supported SQL database and appropriate permissions.
+- A supported SQL database.
 - Microsoft Power BI Desktop.
 - Access to the source dataset.
-- A configured SQL connection for Power BI.
+- Database credentials and permissions for the configured SQL connection.
 
-### Suggested Execution Steps
+### Suggested Steps
 
-1. Clone or download this repository.
-2. Review the Python files in `Uber_Python_Script`.
+1. Clone or download the repository.
+2. Review the files in `Uber_Python_Script`.
 3. Install the dependencies required by the scripts.
-4. Configure the input file path and database connection settings.
-5. Run the data preparation and SQL import script.
-6. Confirm that the expected data is available in the SQL database.
-7. Execute the analysis queries in `SQL_Uber`.
-8. Open the relevant Power BI report, if the report file is included.
-9. Configure the SQL data source and required credentials.
-10. Refresh the Power BI dataset or report and verify that the visuals reflect the latest available source data.
+4. Configure the source file path and SQL connection settings.
+5. Run the Python data preparation and import script.
+6. Verify that the data has been loaded into the expected SQL tables.
+7. Execute the queries in `SQL_Uber`.
+8. Open the Power BI report, if the `.pbix` file is included.
+9. Configure the report's SQL data source and credentials.
+10. Refresh the dataset or report and verify the updated visuals.
 
-**Before running the automation script:** Check its expected file path, target table names, import behavior, and database settings. Do not commit passwords, access tokens, or other credentials to GitHub.
+Before running the script, check its expected input path, target tables, import behavior, and database configuration. Never commit passwords, tokens, or private connection details to GitHub.
 
 ---
 
-## 🔍 Data Quality and Limitations
+## Data Quality and Limitations
 
-Reliable business insights depend on consistent and correctly interpreted data.
+Reliable analytics depends on accurate and consistent data.
 
-The following checks are recommended before using the results:
+The following checks are important:
 
-- Verify record counts and data coverage for each year.
-- Check for duplicate records and missing values.
+- Validate record counts and data coverage for each year.
+- Check for missing values and duplicate records.
 - Validate fare, tip, distance, and revenue fields.
-- Confirm the definitions and units of financial metrics.
-- Validate payment-type codes against the source documentation.
-- Check whether the Power BI measures match the SQL calculations.
-- Confirm that year-over-year calculations use the correct previous-year baseline.
-- Verify that all dashboards use compatible filters, date ranges, and metric definitions.
+- Confirm the units and definitions used for financial metrics.
+- Verify payment codes against official dataset documentation.
+- Check that SQL and Power BI calculations use consistent definitions.
+- Validate year-over-year calculations and date filters.
+- Investigate outliers and unexpected values.
+- Confirm that all dashboards use compatible date ranges and filters.
 
-Some reported totals and measures may require reconciliation before they are treated as final business KPIs.
-
----
-
-## 🔮 Future Improvements
-
-Potential next steps for extending the project include:
-
-- Scheduling the Python data import process.
-- Adding automated validation and error logging.
-- Configuring a fully scheduled refresh pipeline where supported.
-- Improving handling of incremental data loads.
-- Adding data-quality checks before importing records.
-- Standardizing KPI definitions between SQL and Power BI.
-- Adding more detailed trend and seasonal analysis.
-- Documenting the database schema and script configuration.
-- Adding automated tests for important calculations.
+Some totals and measures may require reconciliation before being treated as final business KPIs.
 
 ---
 
-## 🏁 Conclusion
+## Future Improvements
 
-The Uber Trips Analytics project demonstrates a practical, end-to-end approach to data analytics and business intelligence. It combines Python for data preparation and import automation, SQL for structured business analysis, and Power BI for interactive reporting.
+Potential improvements to the project include:
 
-The 10 SQL business questions and five dashboard pages provide a framework for understanding trip trends, revenue, demand timing, geographic distribution, payment behavior, tipping, passenger counts, and travel distances.
-
-Beyond visualization, the project demonstrates how a repeatable data pipeline can reduce manual import work and make reporting easier to maintain. With appropriate data validation and refresh configuration, the workflow can serve as a foundation for more automated analytics.
-
-Overall, this project showcases practical skills in **data cleaning, Python scripting, SQL querying, database connectivity, dashboard development, business problem analysis, and reporting automation**.
+- Scheduling the Python import script.
+- Adding automated data-quality checks.
+- Introducing logging and error handling for failed imports.
+- Implementing incremental data loading.
+- Configuring scheduled Power BI refresh and end-to-end orchestration where supported.
+- Standardizing KPI definitions across SQL and Power BI.
+- Adding more detailed seasonal and trend analysis.
+- Documenting database schemas and script settings.
+- Adding automated tests for key calculations.
 
 ---
 
-**Project Name:** Uber Trips Analytics  
-**Data Period:** 2017–2020  
+## Conclusion
+
+The Uber Trips Analytics project demonstrates a practical end-to-end analytics workflow using Python, SQL, and Power BI.
+
+Python supports data preparation and repeatable import operations, SQL provides structured business analysis, and Power BI presents the results through five dashboard pages. Together, these components help investigate trip trends, revenue, demand timing, geographic distribution, payment behavior, tipping patterns, passenger counts, and trip distances.
+
+The project also demonstrates how connecting Python automation, a SQL database, and Power BI can reduce repetitive manual work and create a foundation for more maintainable reporting. With appropriate validation, connection settings, and refresh orchestration, the workflow can be extended into a more automated reporting pipeline.
+
+Overall, this project showcases practical skills in **data cleaning, Python scripting, SQL querying, database connectivity, business analysis, dashboard development, and reporting automation**.
+
+---
+
+**Project:** Uber Trips Analytics  
+**Dataset Period:** 2017–2020  
 **Tools:** Python · Jupyter Notebook · SQL · Power BI · GitHub  
-**Focus Areas:** Data Analytics · Business Intelligence · Workflow Automation
-
+**Focus:** Data Analytics · Business Intelligence · Workflow Automation
