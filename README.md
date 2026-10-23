@@ -220,8 +220,7 @@ This dashboard provides an overview of trip performance and revenue.
 
 **File:** `Time Based Demand analysis.png`
 
-![Time Based Demand Analysis](./PowerBI%20deshboards/Time%20Based%20Demand%20analysis.png)
-
+![Time-Based Demand Analysis](./PowerBI%20deshboards/time-based-demand-analysis.png)
 This dashboard examines how trip demand varies across different hours and days of the week.
 
 **Key areas covered:**
